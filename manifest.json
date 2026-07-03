@@ -4,8 +4,8 @@
   "description": "Natural alopecia areata recovery \u2014 nutrition, scalp care, gut health & AI companion",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#002e10",
-  "theme_color": "#002e10",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "orientation": "portrait",
   "icons": [
     {
