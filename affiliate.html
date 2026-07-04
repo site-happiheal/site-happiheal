@@ -321,6 +321,10 @@
           <input type="text" id="payout_details" maxlength="200">
         </div>
         <div class="f-field full">
+          <label for="pan">PAN (for TDS purposes, required before your first payout)</label>
+          <input type="text" id="pan" maxlength="10" placeholder="e.g. ABCDE1234F" style="text-transform:uppercase">
+        </div>
+        <div class="f-field full">
           <label for="promotion_plan">How would you promote HappiHeal?</label>
           <textarea id="promotion_plan" rows="3" maxlength="500"></textarea>
         </div>
@@ -395,6 +399,7 @@
         audience_size: document.getElementById("audience_size").value.trim(),
         payout_method: document.getElementById("payout_method").value,
         payout_details: document.getElementById("payout_details").value.trim(),
+        pan: document.getElementById("pan").value.trim().toUpperCase(),
         promotion_plan: document.getElementById("promotion_plan").value.trim(),
       };
 
