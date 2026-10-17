@@ -277,7 +277,9 @@ var PAY_LINKS = {
   window.addEventListener("hashchange", route);
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
     a.addEventListener("click", function(e){
-      var target = a.getAttribute("href").slice(1);
+      var href = a.getAttribute("href") || "";
+      if (href.charAt(0) !== "#") return; // real links (e.g. the Razorpay Buy button) must open normally
+      var target = href.slice(1);
       if (views.indexOf(target) === -1) { e.preventDefault(); return; }
       e.preventDefault(); setView(target);
     });
